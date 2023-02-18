@@ -4,22 +4,37 @@
   "private": true,
   "author": "Shrimpia Network",
   "license": "AGPL-3.0",
+  "type": "module",
+  "packageManager": "pnpm@7.27.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.tsx src",
+    "lint:fix": "eslint --fix --ext .ts,.tsx src"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
-    "@types/node": "18.13.0",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.34.0",
-    "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "4.9.5"
+    "@radix-ui/colors": "^0.1.8",
+    "@stitches/react": "^1.2.8",
+    "@tabler/icons": "^2.4.0",
+    "jotai": "^2.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.8.1",
+    "react-router-dom": "^6.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "@vitejs/plugin-react-swc": "^3.1.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.2",
+    "vite-plugin-pages": "^0.28.0"
   }
 }
