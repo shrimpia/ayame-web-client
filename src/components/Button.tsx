@@ -6,6 +6,7 @@ export const Button = styled('button', {
   padding: '$paddingSlim $padding',
   cursor: 'pointer',
   borderRadius: '$2',
+  lineHeight: '$none',
 
   defaultVariants: {
     color: 'default',
@@ -17,6 +18,8 @@ export const Button = styled('button', {
         backgroundColor: '$uiBg',
         color: '$uiFg',
         border: '1px solid $uiBorder',
+        boxShadow: '$level2',
+
         '&:hover, &:focus': {
           backgroundColor: '$uiHoverBg',
           borderColor: '$uiHoverBorder',
@@ -30,6 +33,8 @@ export const Button = styled('button', {
         backgroundColor: '$uiPrimaryBg',
         color: '$uiPrimaryFg',
         border: '1px solid $uiPrimaryBorder',
+        boxShadow: '$level2',
+
         '&:hover, &:focus': {
           backgroundColor: '$uiPrimaryHoverBg',
           borderColor: '$uiPrimaryHoverBorder',
@@ -43,6 +48,8 @@ export const Button = styled('button', {
         backgroundColor: '$uiDangerBg',
         color: '$uiDangerFg',
         border: '1px solid $uiDangerBorder',
+        boxShadow: '$level2',
+
         '&:hover, &:focus': {
           backgroundColor: '$uiDangerHoverBg',
           borderColor: '$uiDangerHoverBorder',
@@ -54,6 +61,7 @@ export const Button = styled('button', {
       },
       flat: {
         backgroundColor: '$transparent',
+        color: '$uiFg',
         '&:hover, &:focus': {
           backgroundColor: '$uiHoverBg'
         },

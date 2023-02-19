@@ -20,6 +20,7 @@ export const { styled, css, globalCss } = createStitches({
       fg: '$gray12',
       dimmedFg: '$gray11',
       primaryBg: '$primary',
+      divider: '$gray6',
 
       uiBg: '$gray3',
       uiHoverBg: '$gray4',
@@ -42,6 +43,8 @@ export const { styled, css, globalCss } = createStitches({
       uiDangerBorder: '$danger7',
       uiDangerHoverBorder: '$danger8',
       uiDangerFocusBorder: '$danger7',
+
+      shadowColor: '$gray8',
 
       ...gray,
       ...violet,
@@ -109,10 +112,10 @@ export const { styled, css, globalCss } = createStitches({
       10: '512px',
     },
     fontSizes: {
-      title: '$7',
-      subtitle: '$5',
       default: '$4',
       small: '$2',
+      pageTitle: '$6',
+      sectionTitle: '$4',
 
       1: '0.625rem',
       2: '0.75rem',
@@ -140,7 +143,10 @@ export const { styled, css, globalCss } = createStitches({
       none: '1',
     },
     letterSpacings: {},
-    sizes: {},
+    sizes: {
+      em: '1em',
+      maxWidth: '800px',
+    },
     borderWidths: {},
     borderStyles: {},
     radii: {
@@ -153,10 +159,10 @@ export const { styled, css, globalCss } = createStitches({
     },
     shadows: {
       level0: 'none',
-      level1: '0 2px  2px $colors$gray8',
-      level2: '0 2px  4px $colors$gray8',
-      level3: '0 2px  8px $colors$gray8',
-      level4: '0 2px 16px $colors$gray8',
+      level1: '0 2px  2px $colors$shadowColor',
+      level2: '0 2px  4px $colors$shadowColor',
+      level3: '0 2px  8px $colors$shadowColor',
+      level4: '0 2px 16px $colors$shadowColor',
       primaryLevel1: '0 2px  2px $colors$primary7',
       primaryLevel2: '0 2px  4px $colors$primary7',
       primaryLevel3: '0 2px  8px $colors$primary7',
@@ -187,6 +193,7 @@ export const { styled, css, globalCss } = createStitches({
 export const darkTheme = createTheme({
   colors: {
     bg: '$primary2',
+    shadowColor: '$gray5',
 
     ...grayDark,
     ...violetDark,

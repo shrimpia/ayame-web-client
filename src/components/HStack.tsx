@@ -10,7 +10,8 @@ export const HStack = styled('div', {
     dense: false,
     slim: false,
     wrap: false,
-    align: 'stretch'
+    align: 'stretch',
+    justify: 'center',
   },
 
   variants: {
@@ -32,6 +33,13 @@ export const HStack = styled('div', {
       center: { alignItems: 'center' },
       stretch: { alignItems: 'stretch' },
       baseline: { alignItems: 'baseline' }
+    },
+    justify: {
+      left: { justifyContent: 'flex-start' },
+      right: { justifyContent: 'flex-end' },
+      center: { justifyContent: 'center' },
+      spaceBetween: { justifyContent: 'space-between' },
+      spaceAround: { justifyContent: 'space-around' }
     }
   }
 });

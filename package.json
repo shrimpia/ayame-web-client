@@ -17,6 +17,7 @@
     "@radix-ui/colors": "^0.1.8",
     "@stitches/react": "^1.2.8",
     "@tabler/icons": "^2.4.0",
+    "@tabler/icons-react": "^2.4.0",
     "jotai": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
