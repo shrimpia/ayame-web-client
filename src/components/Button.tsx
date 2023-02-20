@@ -8,6 +8,11 @@ export const Button = styled('button', {
   borderRadius: '$2',
   lineHeight: '$none',
 
+  '&:disabled': {
+    cursor: 'default',
+    opacity: 0.5,
+  },
+
   defaultVariants: {
     color: 'default',
   },
@@ -20,11 +25,11 @@ export const Button = styled('button', {
         border: '1px solid $uiBorder',
         boxShadow: '$level2',
 
-        '&:hover, &:focus': {
+        '&:not(:disabled):hover, &:not(:disabled):focus': {
           backgroundColor: '$uiHoverBg',
           borderColor: '$uiHoverBorder',
         },
-        '&:active': {
+        '&:not(:disabled):active': {
           backgroundColor: '$uiActiveBg',
           borderColor: '$uiHoverBorder',
         },
@@ -35,11 +40,11 @@ export const Button = styled('button', {
         border: '1px solid $uiPrimaryBorder',
         boxShadow: '$level2',
 
-        '&:hover, &:focus': {
+        '&:not(:disabled):hover, &:not(:disabled):focus': {
           backgroundColor: '$uiPrimaryHoverBg',
           borderColor: '$uiPrimaryHoverBorder',
         },
-        '&:active': {
+        '&:not(:disabled):active': {
           backgroundColor: '$uiPrimaryActiveBg',
           borderColor: '$uiPrimaryHoverBorder',
         }
@@ -50,11 +55,11 @@ export const Button = styled('button', {
         border: '1px solid $uiDangerBorder',
         boxShadow: '$level2',
 
-        '&:hover, &:focus': {
+        '&:not(:disabled):hover, &:not(:disabled):focus': {
           backgroundColor: '$uiDangerHoverBg',
           borderColor: '$uiDangerHoverBorder',
         },
-        '&:active': {
+        '&:not(:disabled):active': {
           backgroundColor: '$uiDangerActiveBg',
           borderColor: '$uiDangerHoverBorder',
         }
@@ -62,10 +67,11 @@ export const Button = styled('button', {
       flat: {
         backgroundColor: '$transparent',
         color: '$uiFg',
-        '&:hover, &:focus': {
+
+        '&:not(:disabled):hover, &:not(:disabled):focus': {
           backgroundColor: '$uiHoverBg'
         },
-        '&:active': {
+        '&:not(:disabled):active': {
           backgroundColor: '$uiActiveBg'
         },
       },

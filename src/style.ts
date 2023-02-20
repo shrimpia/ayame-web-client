@@ -139,7 +139,7 @@ export const { styled, css, globalCss } = createStitches({
       bolder: 900,
     },
     lineHeights: {
-      default: '1.5',
+      default: '1.75',
       none: '1',
     },
     letterSpacings: {},
@@ -209,6 +209,7 @@ export const useGlobalStyle = globalCss({
     fontSize: '16px',
     fontFamily: '$default',
     backgroundColor: '$bg',
+    lineHeight: '$default',
     color: '$fg',
   },
 });
