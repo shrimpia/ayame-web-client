@@ -1,11 +1,11 @@
 import React from 'react';
-import { VStack } from '../components/VStack';
-import { Button } from '../components/Button';
-import { HStack } from '../components/HStack';
+import { VStack } from '../components/primitives/VStack';
+import { Button } from '../components/primitives/Button';
+import { HStack } from '../components/primitives/HStack';
 import { useAtom } from 'jotai';
 import { themeAtom } from '../store/clientSettings';
 import { IconMoonFilled, IconSunFilled } from '@tabler/icons-react';
-import { PageTitle } from '../components/Typography';
+import { PageTitle } from '../components/primitives/Typography';
 import { PageView } from '../components/PageView';
 
 function index() {

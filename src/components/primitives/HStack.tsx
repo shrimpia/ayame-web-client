@@ -1,4 +1,4 @@
-import { styled } from '../style';
+import { styled } from '../../style';
 
 export const HStack = styled('div', {
   display: 'flex',
@@ -11,7 +11,7 @@ export const HStack = styled('div', {
     slim: false,
     wrap: false,
     align: 'stretch',
-    justify: 'center',
+    justify: 'left',
   },
 
   variants: {

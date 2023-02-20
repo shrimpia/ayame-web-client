@@ -1,4 +1,4 @@
-import { styled } from '../style';
+import { styled } from '../../style';
 
 export const VStack = styled('div', {
   display: 'flex',
@@ -11,7 +11,7 @@ export const VStack = styled('div', {
     slim: false,
     wrap: false,
     align: 'stretch',
-    justify: 'center',
+    justify: 'top',
   },
 
   variants: {
@@ -35,8 +35,8 @@ export const VStack = styled('div', {
       baseline: { alignItems: 'baseline' }
     },
     justify: {
-      left: { justifyContent: 'flex-start' },
-      right: { justifyContent: 'flex-end' },
+      top: { justifyContent: 'flex-start' },
+      down: { justifyContent: 'flex-end' },
       center: { justifyContent: 'center' },
       spaceBetween: { justifyContent: 'space-between' },
       spaceAround: { justifyContent: 'space-around' }

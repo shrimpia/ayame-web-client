@@ -145,7 +145,8 @@ export const { styled, css, globalCss } = createStitches({
     letterSpacings: {},
     sizes: {
       em: '1em',
-      maxWidth: '800px',
+      pageMaxWidth: '800px',
+      sidebarWidth: '320px',
     },
     borderWidths: {},
     borderStyles: {},
@@ -155,7 +156,7 @@ export const { styled, css, globalCss } = createStitches({
       2: '8px',
       3: '16px',
       4: '32px',
-      5: '999px',
+      full: '999px',
     },
     shadows: {
       level0: 'none',

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Container } from '../components/Container';
+import { Container } from '../components/primitives/Container';
 import { styled } from '../style';
-import { Button } from '../components/Button';
-import { VStack } from '../components/VStack';
+import { Button } from '../components/primitives/Button';
+import { VStack } from '../components/primitives/VStack';
 
 const Title = styled('h1', {
-  fontSize: '$title',
+  fontSize: '$pageTitle',
 });
 
 const Img = styled('img', {

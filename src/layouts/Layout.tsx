@@ -1,11 +1,12 @@
 import React, { PropsWithChildren } from 'react';
 import { styled } from '../style';
-import { Container } from '../components/Container';
-import { HStack } from '../components/HStack';
-import { Button } from '../components/Button';
+import { Container } from '../components/primitives/Container';
+import { HStack } from '../components/primitives/HStack';
+import { Button } from '../components/primitives/Button';
 import { IconBell, IconHash, IconHome, IconSearch, IconUsers } from '@tabler/icons-react';
 
 import iris from '../assets/iris.png';
+import { Spacer } from '../components/primitives/Spacer';
 
 const Main = styled(HStack, {
   marginTop: 48,
@@ -30,21 +31,27 @@ const TopBarItem = styled(Button, {
   justifyContent: 'center',
 });
 
-const Spacer = styled('div', {
-  margin: 'auto',
-});
-
-const IconImage = styled('img', {
+const LogoImage = styled('img', {
   filter: 'grayscale(1)',
   height: '1em',
   fontSize: '$6',
+  verticalAlign: 'middle',
+  marginRight: '$paddingSlim',
+});
+
+const Logo = styled('div', {
+  color: '$dimmedFg',
+  fontWeight: '$bold',
 });
 
 export const Layout: React.FC<PropsWithChildren> = (p) => {
   return (
     <div>
       <TopBar>
-        <IconImage src={iris} alt="Ayame" />
+        <Logo>
+          <LogoImage src={iris} alt="Ayame" />
+          Ayame
+        </Logo>
         <HStack dense>
           <TopBarItem color="flat"><IconHome height="1em" /> ホーム</TopBarItem>
           <TopBarItem color="flat"><IconUsers height="1em" /> コミュニティ</TopBarItem>
